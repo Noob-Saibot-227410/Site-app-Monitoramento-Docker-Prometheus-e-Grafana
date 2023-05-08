@@ -27,7 +27,8 @@
 <ul>
   <li><a href="https://www.docker.com/"><img src="https://img.icons8.com/color/48/000000/docker.png"/> Docker</a></li>
   <li><a href="https://docs.docker.com/compose/"><img src="https://img.icons8.com/color/48/000000/docker.png"/> Docker Compose</a></li>
-  <li><a href="https://prometheus.io/"><img src="https://img.icons8.com/color/48/000000/prometheus.png"/> Prometheus</a></li>
+  <li><a href="https://prometheus.io/"><img src="https://prometheus.io/assets/icon.png" width="48" height="48"/> Prometheus</a></li>
+
   <li><a href="https://grafana.com/"><img src="https://img.icons8.com/color/48/000000/grafana.png"/> Grafana</a></li>
   <li><a href="https://developer.mozilla.org/en-US/docs/Web/HTML"><img src="https://img.icons8.com/color/48/000000/html-5.png"/> HTML</a></li>
   <li><a href="https://developer.mozilla.org/en-US/docs/Web/CSS"><img src="https://img.icons8.com/color/48/000000/css3.png"/> CSS</a></li>
