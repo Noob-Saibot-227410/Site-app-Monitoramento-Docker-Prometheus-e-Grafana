@@ -21,12 +21,15 @@
     <li>Use as credenciais padrão do Grafana (usuário `admin`, senha `admin`) para fazer login e configurar painéis para exibir as métricas do Prometheus.</li>
   </ol>
 <h2>Tecnologias utilizadas</h2>
+<h2>Tecnologias utilizadas</h2>
+<h2>Tecnologias utilizadas</h2>
 <ul>
-  <li><i class="fab fa-docker"></i> <a href="https://www.docker.com/">Docker</a></li>
-  <li><i class="fab fa-docker"></i> <a href="https://docs.docker.com/compose/">Docker Compose</a></li>
-  <li><i class="fas fa-chart-line"></i> <a href="https://prometheus.io/">Prometheus</a></li>
-  <li><i class="fab fa-grafana"></i> <a href="https://grafana.com/">Grafana</a></li>
-  <li><i class="fab fa-html5"></i> HTML/CSS</li>
+  <li><a href="https://www.docker.com/"><i class="fab fa-docker"></i> Docker</a></li>
+  <li><a href="https://docs.docker.com/compose/"><i class="fab fa-docker"></i> Docker Compose</a></li>
+  <li><a href="https://prometheus.io/"><i class="fab fa-prometheus"></i> Prometheus</a></li>
+  <li><a href="https://grafana.com/"><i class="fab fa-grafana"></i> Grafana</a></li>
+  <li><i class="fab fa-html5"></i> HTML</li>
+  <li><i class="fab fa-css3"></i> CSS</li>
 </ul>
 </body>
 </html>
