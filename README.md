@@ -25,12 +25,12 @@
   </ol>
 <h2>Tecnologias utilizadas</h2>
 <ul>
-  <li><a href="https://www.docker.com/"><i class="fab fa-docker"></i> Docker</a></li>
-  <li><a href="https://docs.docker.com/compose/"><i class="fab fa-docker"></i> Docker Compose</a></li>
-  <li><a href="https://prometheus.io/"><i class="fab fa-prometheus"></i> Prometheus</a></li>
-  <li><a href="https://grafana.com/"><i class="fab fa-grafana"></i> Grafana</a></li>
-  <li><i class="fab fa-html5"></i> HTML</li>
-  <li><i class="fab fa-css3"></i> CSS</li>
+  <li><a href="https://www.docker.com/"><img src="https://img.icons8.com/color/48/000000/docker.png"/> Docker</a></li>
+  <li><a href="https://docs.docker.com/compose/"><img src="https://img.icons8.com/color/48/000000/docker.png"/> Docker Compose</a></li>
+  <li><a href="https://prometheus.io/"><img src="https://img.icons8.com/color/48/000000/prometheus.png"/> Prometheus</a></li>
+  <li><a href="https://grafana.com/"><img src="https://img.icons8.com/color/48/000000/grafana.png"/> Grafana</a></li>
+  <li><a href="https://developer.mozilla.org/en-US/docs/Web/HTML"><img src="https://img.icons8.com/color/48/000000/html-5.png"/> HTML</a></li>
+  <li><a href="https://developer.mozilla.org/en-US/docs/Web/CSS"><img src="https://img.icons8.com/color/48/000000/css3.png"/> CSS</a></li>
 </ul>
 </body>
 </html>
