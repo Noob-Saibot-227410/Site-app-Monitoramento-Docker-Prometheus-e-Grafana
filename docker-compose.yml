@@ -1,0 +1,64 @@
+version: '3.8'
+
+# Define os serviços a serem criados
+services:
+  # Serviço do app
+  app:
+    # Builda a imagem do docker a partir do Dockerfile do app
+    build: ./app
+    # Faz o mapeamento da porta 80 do container para a porta 8000 do host
+    ports:
+      - "8000:80"
+    # Define o label que o prometheus utilizará para identificar este serviço
+    labels:
+      - "prometheus.job=my-app"
+    # Define a rede a ser utilizada
+    networks:
+      - app-network
+
+  # Serviço do prometheus
+  prometheus:
+    # Define a imagem a ser utilizada
+    image: prom/prometheus:v2.30.3
+    # Define os volumes a serem montados no container
+    volumes:
+      # Monta o arquivo de configuração do prometheus
+      - ./prometheus:/etc/prometheus/
+      # Monta o volume que armazenará os dados coletados pelo prometheus
+      - prometheus-data:/prometheus
+    # Faz o mapeamento da porta 9090 do container para a porta 9090 do host
+    ports:
+      - "9090:9090"
+    # Define a rede a ser utilizada
+    networks:
+      - app-network
+
+  # Serviço do grafana
+  grafana:
+    # Define a imagem a ser utilizada
+    image: grafana/grafana:8.3.0
+    # Faz o mapeamento da porta 3000 do container para a porta 3000 do host
+    ports:
+      - "3000:3000"
+    # Define a rede a ser utilizada
+    networks:
+      - app-network
+    # Define a dependência do serviço do prometheus
+    depends_on:
+      - prometheus
+    # Define as variáveis de ambiente
+    environment:
+      # Instala o plugin do grafana para gráficos de pizza
+      - GF_INSTALL_PLUGINS=grafana-piechart-panel
+
+# Define as redes a serem utilizadas
+networks:
+  # Cria a rede app-network
+  app-network:
+    # Define o driver da rede
+    driver: bridge
+
+# Define os volumes a serem utilizados
+volumes:
+  # Cria o volume prometheus-data
+  prometheus-data:
